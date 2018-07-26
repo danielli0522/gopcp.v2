@@ -74,7 +74,7 @@ type Analyzer interface {
 // ParseResponse 代表用于解析HTTP响应的函数的类型。
 type ParseResponse func(httpResp *http.Response, respDepth uint32) ([]Data, []error)
 
-// Pipeline 代表条目处理管道的接口类型。
+// Pipeline 代表条目处理管道的接口类型。r
 // 该接口的实现类型必须是并发安全的！
 type Pipeline interface {
 	Module

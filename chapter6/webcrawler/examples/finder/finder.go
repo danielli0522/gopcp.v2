@@ -73,14 +73,17 @@ func main() {
 		ErrorBufferCap:       50,
 		ErrorMaxBufferNumber: 1,
 	}
+	// 生成下载器
 	downloaders, err := lib.GetDownloaders(1)
 	if err != nil {
 		logger.Fatalf("An error occurs when creating downloaders: %s", err)
 	}
+	// 生成分析器
 	analyzers, err := lib.GetAnalyzers(1)
 	if err != nil {
 		logger.Fatalf("An error occurs when creating analyzers: %s", err)
 	}
+	// 生成条目处理管道
 	pipelines, err := lib.GetPipelines(1, dirPath)
 	if err != nil {
 		logger.Fatalf("An error occurs when creating pipelines: %s", err)

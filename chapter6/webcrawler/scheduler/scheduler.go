@@ -372,6 +372,7 @@ func (sched *myScheduler) download() {
 				sendError(errors.New(errMsg), "", sched.errorBufferPool)
 			}
 			sched.downloadOne(req)
+			logger.Info("download",req.HTTPReq().URL.Path)
 		}
 	}()
 }
