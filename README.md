@@ -37,7 +37,7 @@
         
 - go语言如何调用C语言
     - 环境准备
-        - windows 需要按照gcc命令，如C:\mingw64\bin
+        - windows 需要安装gcc命令，如C:\mingw64\bin
     - 编写C代码
         - 参考grammear的go2c目录
      

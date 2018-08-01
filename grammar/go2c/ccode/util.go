@@ -1,4 +1,4 @@
-package go2c
+package ccode
 
 // #cgo LDFLAGS: -L .
 // #include "util.h"
