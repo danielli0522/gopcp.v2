@@ -2,7 +2,7 @@ package interfacetest
 
 import "fmt"
 
-func main()  {
+func main2()  {
 	fmt.Print("enter main funcion")
 
 

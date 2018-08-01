@@ -8,6 +8,7 @@
         - if 语句：不用括号;一个if可以有两个语句
     - interface的使用
     - 如何进行继承功能
+   
 
 - 掌握开发一个后台程序需要的相关go技术
     - 并发编程
@@ -33,3 +34,19 @@
 
         - 条目处理器
         > 在main函数中启动后，使用go协程进行数据处理
+        
+- go语言如何调用C语言
+    - 环境准备
+        - windows 需要按照gcc命令，如C:\mingw64\bin
+    - 编写C代码
+        - 参考grammear的go2c目录
+     
+    - 编写go语言代码
+        - 参考grammear的go2c目录,一定需要类似语句（import “C”必须紧跟注释）
+        ```
+            // #cgo LDFLAGS: -L .
+            // #include "util.h"
+            import "C"
+        ```
+    - 编写main.go，运行指令
+            
